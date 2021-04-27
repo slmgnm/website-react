@@ -73,5 +73,4 @@ const Social = styled(motion.div)`
     margin: 2rem;
   }
 `;
-
 export default ContactUs;

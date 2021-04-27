@@ -5,15 +5,11 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
-
 //Styles
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { fade } from "../animation";
 import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -77,6 +73,9 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 const Card = styled.div`
   flex-basis: 20rem;

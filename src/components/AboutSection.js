@@ -1,13 +1,13 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import { link } from "react-router-dom";
 //Styled
 import styled from "styled-components";
-
 
 import { About, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
-import Wave from './wave';
+import Wave from "./wave";
 
 const AboutSection = () => {
   return (
@@ -30,12 +30,13 @@ const AboutSection = () => {
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
         </motion.p>
+
         <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
       </Image>
-      <Wave/>
+      <Wave />
     </About>
   );
 };
