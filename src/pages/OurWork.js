@@ -7,8 +7,10 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 import { motion } from "framer-motion";
 import { useScroll } from "../components/useScroll";
+import ScrollUp from './../components/scrollTop';
 
 import {
+
   sliderContainer,
   slider,
   pageAnimation,
@@ -61,6 +63,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollUp/>
     </Work>
   );
 };

@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ServicesSection from "./../components/ServicesSection";
 import FaqSection from "./../components/FaqSection";
 import { motion } from "framer-motion";
-
+import ScrollUp from "./../components/scrollTop";
 import { pageAnimation } from "./../animation";
 const AboutUs = () => {
   return (
@@ -12,11 +12,11 @@ const AboutUs = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      exit="exit"
-      >
+      exit="exit">
       <AboutSection />
       <ServicesSection />
       <FaqSection />
+      <ScrollUp />
     </motion.div>
   );
 };

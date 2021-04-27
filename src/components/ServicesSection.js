@@ -13,12 +13,16 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { fade } from "../animation";
-import {scrollReveal} from "../animation"
+import { scrollReveal } from "../animation";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Services variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
+    <Services
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}>
       <Description>
         <h2>
           High <span>quality</span> services
